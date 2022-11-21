@@ -1,14 +1,10 @@
 import time
 def choose_word(pos,path):
     with open(path,'r')as f:
-        data = f.read()
+        data = ' '.join(f.readlines())
     pos %= len(data.split())
     word = data.split()[pos-1]
-    total = []
-    for i in data.split():
-        if i not in total:
-            total.append(i)
-    return (len(total),word) 
+    return word
 
 def check_win(secret_word, old_letters_guessed):
     checkWin = ''
@@ -57,7 +53,7 @@ def main():
     counter = 1
     path = input('please enter path to list of words: ')
     index = int(input('please enter a number: '))
-    _,secretWord = choose_word(index,path)
+    secretWord = choose_word(index,path)
     print('Lets start!')
     print(print_hangman(counter))
     print(' _ '*len(secretWord))
