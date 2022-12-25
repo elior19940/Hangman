@@ -1,7 +1,7 @@
 # Hangman
 Welcome to my implementation of the classic word guessing game, Hangman! This is my first Python project, so please bear with me as I learn and improve my skills.
 
-How to play
+## How to play
 The game will choose a random word from a list of words and display a number of blank spaces, one for each letter in the word. The player will then guess letters, trying to fill in the blanks and guess the word before running out of chances.
 
 For each incorrect guess, a part of the hangman diagram will be drawn. The player loses the game if the entire hangman is drawn before the word is guessed.
