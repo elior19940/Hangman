@@ -6,12 +6,12 @@ The game will choose a random word from a list of words and display a number of 
 
 For each incorrect guess, a part of the hangman diagram will be drawn. The player loses the game if the entire hangman is drawn before the word is guessed.
 
-How to run the game
+## How to run the game
 To run the game, you will need to have Python 3 installed on your machine. You can download Python 3 here.
 
 Once you have Python 3 installed, you can clone this repository or download the hangman.py file. Navigate to the directory containing the file in your terminal, and then run the command python hangman.py to start the game.
 
-Additional features
+## Additional features
 In addition to the basic gameplay, I have also implemented the following features:
 
 The ability to choose the number of incorrect guesses allowed before the game is lost (also known as the "hangman's noose")
